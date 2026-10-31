@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Ignacio Vidal | QA Engineer & Software Developer</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="./assets/img/logo.jpg" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="logo-container">
+        <img src="./assets/img/logo.jpg" alt="Ignacio Vidal logo" />
+        <p>Ignacio Vidal</p>
+      </div>
+
+      <!-- Navigation -->
+      <nav>
+        <ul>
+          <li><a href="#inicio">Home</a></li>
+          <li><a href="#sobre-mi">About</a></li>
+          <li><a href="#habilidades">Skills</a></li>
+          <li><a href="#proyectos">Projects</a></li>
+          <li><a href="#contacto">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Language selector -->
+      <div class="selector-idioma">
+        <select
+          id="idioma"
+          aria-label="Select language"
+          onchange="window.location.href = this.value"
+        >
+          <option value="./index.html">ESP</option>
+          <option value="./en.html" selected>ENG</option>
+        </select>
+        <i class="fa-solid fa-globe"> </i>
+      </div>
+    </header>
+
+    <main>
+      <!-- Home -->
+      <section id="inicio">
+        <div class="presentacion">
+          <p class="presentacion-etiqueta">QA ENGINEER / SOFTWARE DEVELOPER</p>
+
+          <h1>Ignacio Vidal<span class="punto">.</span></h1>
+
+          <h2>Software quality and web development.</h2>
+
+          <p class="presentacion-descripcion">
+            Manual testing, test automation with Playwright, and application
+            development using JavaScript. Currently pursuing a degree in
+            Software Development at IFTS 16.
+          </p>
+
+          <div class="enlaces-profesionales">
+            <a
+              href="https://github.com/ignaci0vidal"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-primario"
+            >
+              <i class="fa-brands fa-github"></i>
+              GitHub
+            </a>
+
+            <a href="#proyectos" class="btn-secundario">
+              <i class="fa-solid fa-code"></i>
+              View projects
+            </a>
+
+            <a
+              href="./assets/pdf/CV_IgnacioVidal_ENG.pdf"
+              download
+              class="btn-secundario"
+            >
+              <i class="fa-solid fa-file-arrow-down"></i>
+              Download CV
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- About me -->
+      <section id="sobre-mi">
+        <div class="contenedor-sobre-mi">
+          <div class="sobre-mi-texto">
+            <h2>About me</h2>
+
+            <p>
+              I am currently pursuing a Higher Technical Degree in Software
+              Development at IFTS 16 in Buenos Aires, Argentina.
+            </p>
+
+            <p>
+              I have completed training in manual software testing and am
+              continuing to develop my test automation skills using JavaScript
+              and Playwright.
+            </p>
+
+            <p>
+              I also work on software development projects, using technologies
+              such as HTML, CSS, JavaScript, and Node.js.
+            </p>
+          </div>
+
+          <div class="foto-perfil">
+            <img
+              src="./assets/img/perfil.jpg"
+              alt="Portrait of Ignacio Vidal"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Technical skills -->
+      <section id="habilidades">
+        <h2>Technical skills</h2>
+
+        <p>Technologies and tools I use in software testing and development.</p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Area</th>
+              <th>Technologies and tools</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Frontend</td>
+              <td>HTML, CSS, JavaScript</td>
+            </tr>
+
+            <tr>
+              <td>Backend</td>
+              <td>Node.js, Express</td>
+            </tr>
+
+            <tr>
+              <td>Manual QA</td>
+              <td>Functional testing, Postman, Jira</td>
+            </tr>
+
+            <tr>
+              <td>QA Automation</td>
+              <td>JavaScript, Playwright</td>
+            </tr>
+
+            <tr>
+              <td>Databases</td>
+              <td>SQL, SQLite, MongoDB</td>
+            </tr>
+
+            <tr>
+              <td>Version control</td>
+              <td>Git, GitHub</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Projects -->
+      <section id="proyectos">
+        <h2>My projects</h2>
+
+        <p>
+          Selected projects developed during my software development and QA
+          training.
+        </p>
+
+        <div class="contenedor-proyectos">
+          <!-- Project 1 -->
+          <div class="proyecto">
+            <h3>miKitchen</h3>
+
+            <p>
+              Mobile application for managing cooking recipes, favorites, and
+              interactive features.
+            </p>
+
+            <p>Technologies: React Native, Expo, and TypeScript.</p>
+
+            <a
+              href="https://github.com/ignaci0vidal/ProyectoFinalMobile"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View repository
+            </a>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="proyecto">
+            <h3>E-commerce</h3>
+
+            <p>
+              E-commerce web application featuring a product catalog, shopping
+              cart, order management, and administration.
+            </p>
+
+            <p>Technologies: HTML, CSS, JavaScript, Node.js, and Express.</p>
+
+            <a
+              href="https://github.com/LuCorral/IFT16--Ing.Software-Ecommerce"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View repository
+            </a>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="proyecto">
+            <h3>QA Automation</h3>
+
+            <p>
+              Development of automated tests for web applications using
+              JavaScript and Playwright.
+            </p>
+
+            <p>Tools: Playwright, JavaScript, and Git.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contacto">
+        <h2>Contact</h2>
+
+        <p>Have a job opportunity or want to get in touch?</p>
+
+        <form>
+          <div>
+            <label for="nombre">Full name</label>
+            <input type="text" id="nombre" name="nombre" />
+          </div>
+
+          <div>
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" />
+          </div>
+
+          <div>
+            <label for="telefono">Phone number</label>
+            <input type="tel" id="telefono" name="telefono" />
+          </div>
+
+          <div>
+            <label for="mensaje">Message</label>
+            <textarea id="mensaje" name="mensaje" rows="5"></textarea>
+          </div>
+
+          <button type="button">
+            <i class="fa-solid fa-paper-plane"></i>
+            Send message
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-contenido">
+        <div class="footer-info">
+          <h3>Ignacio Vidal</h3>
+          <p>QA Engineer &amp; Software Developer</p>
+        </div>
+
+        <nav class="footer-enlaces">
+          <ul>
+            <li>
+              <a
+                href="https://github.com/ignaci0vidal"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer-copyright">
+        <p>© 2026 Ignacio Vidal. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

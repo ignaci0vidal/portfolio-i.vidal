@@ -424,6 +424,7 @@ form button:hover {
 
 .enlaces-profesionales {
   display: flex;
+  flex-wrap: wrap;
   gap: 15px;
   margin-top: 30px;
 }
@@ -533,7 +534,28 @@ footer {
 form button i {
   margin-right: 8px;
 }
+/* Selector de idioma */
 
+.selector-idioma {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.selector-idioma i {
+  color: #b0b0b0;
+  font-size: 16px;
+}
+
+.selector-idioma select {
+  background-color: #242424;
+  color: #ffffff;
+  border: 1px solid #444444;
+  border-radius: 6px;
+  padding: 8px 10px;
+  font-family: 'Geist', Arial, sans-serif;
+  cursor: pointer;
+}
 /*//////////////// responsive ////////////////*/
 
 /* Tablet vertical */
