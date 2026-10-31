@@ -136,6 +136,15 @@ header a {
   font-size: 16px;
   line-height: 1.6;
 }
+.presentacion-descripcion a {
+  color: #ffffff;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.presentacion-descripcion a:hover {
+  color: #b0b0b0;
+}
 /* Sección Sobre mí */
 
 #sobre-mi {
@@ -233,6 +242,12 @@ header a {
   color: #b0b0b0;
   text-align: left;
   line-height: 1.6;
+}
+/* Composición de Habilidades */
+
+.habilidades-contenido {
+  width: 85%;
+  margin-left: 0%;
 }
 
 /* Tabla de tecnologías */
