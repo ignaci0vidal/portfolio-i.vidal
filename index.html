@@ -17,10 +17,16 @@
 
     <!-- Favicon -->
     <link rel="icon" type="image/jpeg" href="./assets/img/logo.jpg" />
+    <!-- Iconos Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
 
     <!-- CSS externo -->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
+
   <body>
     <!-- Encabezado y navegación -->
 
@@ -47,55 +53,70 @@
 
     <main>
       <!-- Sección de presentación -->
+
+      <!-- Sección de presentación -->
       <section id="inicio">
-        <h1>Ignacio Vidal</h1>
+        <div class="presentacion">
+          <p class="presentacion-etiqueta">QA ENGINEER / SOFTWARE DEVELOPER</p>
 
-        <h2>QA Engineer & Software Developer</h2>
+          <h1>Ignacio Vidal<span class="punto">.</span></h1>
 
-        <p>
-          Estudiante de Desarrollo de Software en el IFTS 16, con formación en
-          testing manual y automatización de pruebas con JavaScript y
-          Playwright.
-        </p>
+          <h2>Calidad de software y desarrollo web.</h2>
 
-        <div class="enlaces-profesionales">
-          <a
-            href="https://github.com/ignaci0vidal"
-            target="_blank"
-            class="btn-primario"
-          >
-            GitHub
-          </a>
+          <p class="presentacion-descripcion">
+            Testing manual, automatización con Playwright y desarrollo de
+            aplicaciones con JavaScript. Estudiante de Desarrollo de Software en
+            el IFTS 16.
+          </p>
 
-          <a href="#proyectos" class="btn-secundario"> Ver proyectos </a>
-        </div>
+          
+<div class="enlaces-profesionales">
+
+    <a href="https://github.com/ignaci0vidal"
+       target="_blank"
+       class="btn-primario">
+        <i class="fa-brands fa-github"></i>
+        GitHub
+    </a>
+
+    <a href="#proyectos"
+       class="btn-secundario">
+        <i class="fa-solid fa-code"></i>
+        Ver proyectos
+    </a>
+
+</div>
+
       </section>
 
-      <!-- Sección Sobre mí -->
       <section id="sobre-mi">
-        <h2>Sobre mí</h2>
+        <div class="contenedor-sobre-mi">
+          <div class="sobre-mi-texto">
+            <h2>Sobre mí</h2>
 
-        <p>
-          Soy estudiante de la Tecnicatura Superior en Desarrollo de Software en
-          el IFTS 16.
-        </p>
+            <p>
+              Soy estudiante de la Tecnicatura Superior en Desarrollo de
+              Software en el IFTS 16.
+            </p>
 
-        <p>
-          Me formé en testing manual y actualmente continúo desarrollando mis
-          conocimientos en automatización de pruebas con JavaScript y
-          Playwright.
-        </p>
+            <p>
+              Me formé en testing manual y actualmente continúo desarrollando
+              mis conocimientos en automatización de pruebas con JavaScript y
+              Playwright.
+            </p>
 
-        <p>
-          También trabajo en proyectos de desarrollo de software, utilizando
-          tecnologías como HTML, CSS, JavaScript y Node.js.
-        </p>
+            <p>
+              También trabajo en proyectos de desarrollo de software, utilizando
+              tecnologías como HTML, CSS, JavaScript y Node.js.
+            </p>
+          </div>
 
-        <div class="foto-perfil">
-          <img
-            src="./assets/img/perfil.jpg"
-            alt="Fotografía de Ignacio Vidal"
-          />
+          <div class="foto-perfil">
+            <img
+              src="./assets/img/perfil.jpg"
+              alt="Fotografía de Ignacio Vidal"
+            />
+          </div>
         </div>
       </section>
 
@@ -222,47 +243,65 @@
 
         <!-- Formulario de contacto -->
         <form>
-          <div>
-            <label for="nombre">Nombre</label>
-            <input type="text" id="nombre" name="nombre" />
-          </div>
+          <!-- Formulario de contacto -->
+          <form>
+            <div>
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre" />
+            </div>
 
-          <div>
-            <label for="apellido">Apellido</label>
-            <input type="text" id="apellido" name="apellido" />
-          </div>
+            <div>
+              <label for="email">Correo electrónico</label>
+              <input type="email" id="email" name="email" />
+            </div>
 
-          <div>
-            <label for="email">Correo electrónico</label>
-            <input type="email" id="email" name="email" />
-          </div>
+            <div>
+              <label for="telefono">Teléfono</label>
+              <input type="tel" id="telefono" name="telefono" />
+            </div>
 
-          <div>
-            <label for="telefono">Teléfono</label>
-            <input type="tel" id="telefono" name="telefono" />
-          </div>
+            <div>
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" rows="5"></textarea>
+            </div>
 
-          <button type="button">Enviar mensaje</button>
+            <button type="button">
+    <i class="fa-solid fa-paper-plane"></i>
+    Enviar mensaje
+</button>
+          </form>
         </form>
       </section>
-
-      <!-- Enlaces de la portada -->
-      <div class="enlaces-profesionales">
-        <a
-          href="https://github.com/ignaci0vidal"
-          target="_blank"
-          class="btn-primario"
-        >
-          GitHub
-        </a>
-
-        <a href="#proyectos" class="btn-secundario"> Ver proyectos </a>
-      </div>
     </main>
 
     <!-- Pie de página -->
     <footer>
-      <p>© 2026 Ignacio Vidal</p>
+      <div class="footer-contenido">
+        <!-- Información personal -->
+        <div class="footer-info">
+          <h3>Ignacio Vidal</h3>
+          <p>QA Engineer & Software Developer</p>
+        </div>
+
+        <!-- Enlaces profesionales -->
+        <nav class="footer-enlaces">
+          <ul>
+            <li>
+              <a href="https://github.com/ignaci0vidal" target="_blank">
+                GitHub
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.linkedin.com/" target="_blank"> LinkedIn </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer-copyright">
+        <p>© 2026 Ignacio Vidal. Todos los derechos reservados.</p>
+      </div>
     </footer>
   </body>
 </html>
