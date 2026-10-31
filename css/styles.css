@@ -439,49 +439,48 @@ form button:hover {
 
 .enlaces-profesionales {
   display: flex;
+  justify-content: flex-start;
+  align-items: center;
   flex-wrap: wrap;
   gap: 15px;
-  margin-top: 30px;
 }
 
-/* Botón principal */
+/* Estilo de los tres botones */
 
-.btn-primario:link,
-.btn-primario:visited {
-  background-color: #ffffff;
-  color: #121212;
-  padding: 12px 24px;
-  border: 1px solid #ffffff;
-  border-radius: 5px;
-  text-decoration: none;
-}
+.btn-portada:link,
+.btn-portada:visited {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 
-/* Botón secundario */
+  padding: 12px 22px;
 
-.btn-secundario:link,
-.btn-secundario:visited {
-  background-color: transparent;
+  background-color: #282828;
   color: #ffffff;
-  padding: 12px 24px;
-  border: 1px solid #ffffff;
+  border: 1px solid #555555;
   border-radius: 5px;
+
   text-decoration: none;
+  font-weight: 500;
+
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    opacity 0.2s ease;
 }
 
 /* Efecto al pasar el mouse */
 
-.btn-primario:hover {
-  background-color: #cccccc;
-}
-
-.btn-secundario:hover {
-  background-color: #333333;
+.btn-portada:hover {
+  background-color: #404040;
+  border-color: #888888;
+  color: #ffffff;
 }
 
 /* Efecto al presionar */
 
-.btn-primario:active,
-.btn-secundario:active {
+.btn-portada:active {
   opacity: 0.6;
 }
 
