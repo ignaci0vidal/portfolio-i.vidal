@@ -70,6 +70,36 @@ header a {
   color: #ffffff;
   text-decoration: none;
 }
+
+/* Botón de contacto por correo */
+
+.mail {
+  margin: 20px 0;
+}
+
+.btn-mail {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 9px 15px;
+  font-size: 13px;
+  font-weight: 500;
+
+  color: #cccccc;
+  background-color: transparent;
+  border: 1px solid #444444;
+  border-radius: 6px;
+
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.btn-mail:hover {
+  color: #ffffff;
+  background-color: #252525;
+  border-color: #777777;
+}
 /*//////////////// PORTADA ////////////////*/
 
 #inicio {

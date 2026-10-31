@@ -22,7 +22,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
-    
 
     <!-- CSS externo -->
     <link rel="stylesheet" href="./css/styles.css" />
@@ -50,22 +49,23 @@
           <li><a href="#contacto">Contacto</a></li>
         </ul>
       </nav>
-      <!-- Selector de idioma -->
-        <div class="selector-idioma">
-            
 
-            <select id="idioma" onchange="window.location.href=this.value">
-                <option value="./index.html" selected>ESP</option>
-                <option value="./en.html">ENG</option>
-                
-            </select>
-            <i class="fa-solid fa-globe"></i>
-        </div>
+      <div class="mail">
+        <a href="mailto:ignaciovidal@gmail.com" class="btn-mail">
+          <i class="fa-regular fa-envelope"></i>
+        </a>
+      </div>
+      <!-- Selector de idioma -->
+      <div class="selector-idioma">
+        <select id="idioma" onchange="window.location.href = this.value">
+          <option value="./index.html" selected>ESP</option>
+          <option value="./en.html">ENG</option>
+        </select>
+        <i class="fa-solid fa-globe"></i>
+      </div>
     </header>
 
     <main>
-      <!-- Sección de presentación -->
-
       <!-- Sección de presentación -->
       <section id="inicio">
         <div class="presentacion">
@@ -78,43 +78,48 @@
           <p class="presentacion-descripcion">
             Testing manual, automatización con Playwright y desarrollo de
             aplicaciones con JavaScript.
-            <br>
+            <br />
             Estudiante de Desarrollo de Software en el
-            <a href="https://ifts16.com/"
-            target="_blank"
-            rel="noopener noreferrer">IFTS 16</a>.
-        </p>
+            <a
+              href="https://ifts16.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >IFTS 16</a
+            >.
+          </p>
 
-          
-<div class="enlaces-profesionales">
+          <div class="enlaces-profesionales">
+            <a
+              href="https://github.com/ignaci0vidal"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-portada"
+            >
+              <i class="fa-brands fa-github"></i>
+              GitHub
+            </a>
 
-    <a href="https://github.com/ignaci0vidal"
-       target="_blank"
-       class="btn-portada">
-        <i class="fa-brands fa-github"></i>
-        GitHub
-    </a>
+            <!-- Descargar CV -->
+            <a
+              href="./assets/pdf/CV_IgnacioVidal_ENG.pdf"
+              download
+              class="btn-portada"
+            >
+              <i class="fa-solid fa-file-arrow-down"></i>
+              Descargar CV
+            </a>
 
-    
-
-    <!-- Descargar CV -->
-    <a href="./assets/pdf/CV_IgnacioVidal_ENG.pdf"
-       download
-       class="btn-portada">
-        <i class="fa-solid fa-file-arrow-down"></i>
-        Descargar CV
-    </a>
-
-    <a href="https://www.linkedin.com/in/igvidal/"
-      target="_blank"
-      rel="noopener noreferrer"
-      class="btn-portada">
-        <i class="fa-brands fa-linkedin"></i>
-        LinkedIn
-    </a>
-
-</div>
-
+            <a
+              href="https://www.linkedin.com/in/igvidal/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-portada"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+              LinkedIn
+            </a>
+          </div>
+        </div>
       </section>
 
       <section id="sobre-mi">
@@ -151,54 +156,54 @@
       <!-- Sección Habilidades -->
       <section id="habilidades">
         <div class="habilidades-contenido">
+          <h2>Habilidades técnicas</h2>
 
-        <h2>Habilidades técnicas</h2>
+          <p>
+            Tecnologías y herramientas que utilizo en testing y desarrollo de
+            software.
+          </p>
 
-        <p>
-            Tecnologías y herramientas que utilizo
-            en testing y desarrollo de software.
-        </p>
+          <table>
+            <thead>
+              <tr>
+                <th>Área</th>
+                <th>Tecnologías y herramientas</th>
+              </tr>
+            </thead>
 
-        <table>
-          <thead>
-            <tr>
-              <th>Área</th>
-              <th>Tecnologías y herramientas</th>
-            </tr>
-          </thead>
+            <tbody>
+              <tr>
+                <td>Frontend</td>
+                <td>HTML, CSS, JavaScript</td>
+              </tr>
 
-          <tbody>
-            <tr>
-              <td>Frontend</td>
-              <td>HTML, CSS, JavaScript</td>
-            </tr>
+              <tr>
+                <td>Backend</td>
+                <td>Node.js, Express</td>
+              </tr>
 
-            <tr>
-              <td>Backend</td>
-              <td>Node.js, Express</td>
-            </tr>
+              <tr>
+                <td>QA Manual</td>
+                <td>Testing funcional, Postman, Jira</td>
+              </tr>
 
-            <tr>
-              <td>QA Manual</td>
-              <td>Testing funcional, Postman, Jira</td>
-            </tr>
+              <tr>
+                <td>QA Automation</td>
+                <td>JavaScript, Playwright</td>
+              </tr>
 
-            <tr>
-              <td>QA Automation</td>
-              <td>JavaScript, Playwright</td>
-            </tr>
+              <tr>
+                <td>Bases de datos</td>
+                <td>SQL, SQLite, MongoDB</td>
+              </tr>
 
-            <tr>
-              <td>Bases de datos</td>
-              <td>SQL, SQLite, MongoDB</td>
-            </tr>
-
-            <tr>
-              <td>Control de versiones</td>
-              <td>Git, GitHub</td>
-            </tr>
-          </tbody>
-        </table>
+              <tr>
+                <td>Control de versiones</td>
+                <td>Git, GitHub</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </section>
 
       <!-- Sección Proyectos -->
@@ -273,33 +278,35 @@
 
         <!-- Formulario de contacto -->
         <form>
-          <!-- Formulario de contacto -->
-          <form>
-            <div>
-              <label for="nombre">Nombre</label>
-              <input type="text" id="nombre" name="nombre" />
-            </div>
+          <div>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" />
+          </div>
 
-            <div>
-              <label for="email">Correo electrónico</label>
-              <input type="email" id="email" name="email" />
-            </div>
+          <div>
+            <label for="apellido">Apellido</label>
+            <input type="text" id="apellido" name="apellido" />
+          </div>
 
-            <div>
-              <label for="telefono">Teléfono</label>
-              <input type="tel" id="telefono" name="telefono" />
-            </div>
+          <div>
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" />
+          </div>
 
-            <div>
-              <label for="mensaje">Mensaje</label>
-              <textarea id="mensaje" name="mensaje" rows="5"></textarea>
-            </div>
+          <div>
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" />
+          </div>
 
-            <button type="button">
-    <i class="fa-solid fa-paper-plane"></i>
-    Enviar mensaje
-</button>
-          </form>
+          <div>
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="5"></textarea>
+          </div>
+
+          <button type="button">
+            <i class="fa-solid fa-paper-plane"></i>
+            Enviar mensaje
+          </button>
         </form>
       </section>
     </main>
@@ -323,7 +330,13 @@
             </li>
 
             <li>
-              <a href="https://www.linkedin.com/" target="_blank"> LinkedIn </a>
+              <a
+                href="https://www.linkedin.com/in/igvidal/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn
+              </a>
             </li>
           </ul>
         </nav>
