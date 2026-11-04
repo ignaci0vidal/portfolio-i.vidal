@@ -42,7 +42,6 @@ portfolio-i.vidal/
 
 El portfolio está preparado para publicarse mediante **GitHub Pages**, utilizando la rama `main` del repositorio.
 
-Una vez habilitado GitHub Pages, el sitio estará disponible en:
 
 https://ignaci0vidal.github.io/portfolio-i.vidal/
 
