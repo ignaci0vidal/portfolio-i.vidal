@@ -271,31 +271,40 @@
 
         <p>Have a job opportunity or want to get in touch?</p>
 
-        <form>
+        <p class="contact-help">Fields marked * are required. Phone number is optional.</p>
+
+        <form id="contact-form" action="https://formspree.io/f/mzeradrv" method="POST">
           <div>
-            <label for="nombre">Full name</label>
-            <input type="text" id="nombre" name="nombre" />
+            <label for="nombre">Full name *</label>
+            <input type="text" id="nombre" name="nombre" autocomplete="name" maxlength="100" required aria-describedby="nombre-error" />
+            <small id="nombre-error" class="field-error"></small>
           </div>
 
           <div>
-            <label for="email">Email address</label>
-            <input type="email" id="email" name="email" />
+            <label for="email">Email address *</label>
+            <input type="email" id="email" name="email" autocomplete="email" maxlength="254" required aria-describedby="email-error" />
+            <small id="email-error" class="field-error"></small>
           </div>
 
           <div>
             <label for="telefono">Phone number</label>
-            <input type="tel" id="telefono" name="telefono" />
+            <input type="tel" id="telefono" name="telefono" autocomplete="tel" maxlength="40" aria-describedby="telefono-error" />
+            <small id="telefono-error" class="field-error"></small>
           </div>
 
           <div>
-            <label for="mensaje">Message</label>
-            <textarea id="mensaje" name="mensaje" rows="5"></textarea>
+            <label for="mensaje">Message *</label>
+            <textarea id="mensaje" name="mensaje" rows="5" minlength="10" maxlength="5000" required aria-describedby="mensaje-error"></textarea>
+            <small id="mensaje-error" class="field-error"></small>
           </div>
 
-          <button type="button">
+          <input type="text" name="_gotcha" class="contact-honeypot" tabindex="-1" autocomplete="off" aria-hidden="true" />
+
+          <button type="submit">
             <i class="fa-solid fa-paper-plane"></i>
             Send message
           </button>
+          <p id="contact-status" class="contact-status" role="status" aria-live="polite" aria-atomic="true"></p>
         </form>
       </section>
     </main>
@@ -337,5 +346,6 @@
         <p>© 2026 Ignacio Vidal. All rights reserved.</p>
       </div>
     </footer>
+    <script src="./js/contact.js" defer></script>
   </body>
 </html>
