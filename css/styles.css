@@ -41,7 +41,7 @@ header {
   display: flex;
   align-items: center;
   gap: 10px;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   white-space: nowrap;
 }
@@ -71,7 +71,8 @@ header nav a {
   align-items: center;
   min-height: 44px;
   color: #b9b9b9;
-  font-size: 13px;
+  font-size: 15px;
+  font-weight: 500;
   text-decoration: none;
   white-space: nowrap;
 }
@@ -96,7 +97,7 @@ header nav a:hover {
   min-height: 44px;
   padding: 6px;
   font: inherit;
-  font-size: 12px;
+  font-size: 14px;
   color: #f2f2f2;
   background: transparent;
   border: 1px solid #3d3d3d;
@@ -661,13 +662,13 @@ footer {
     padding-inline: 16px;
   }
   .logo-container {
-    font-size: 14px;
+    font-size: 16px;
   }
   header ul {
     gap: 10px;
   }
   header nav a {
-    font-size: 12px;
+    font-size: 14px;
   }
   /* Portada */
   .presentacion {
@@ -695,6 +696,23 @@ footer {
   /* Contacto */
   form {
     width: 70%;
+  }
+}
+@media (max-width: 900px) {
+  html {
+    scroll-padding-top: 140px;
+  }
+  header {
+    flex-wrap: wrap;
+    gap: 4px 10px;
+  }
+  .logo-container {
+    flex: 1;
+  }
+  header nav {
+    order: 3;
+    flex-basis: 100%;
+    max-width: none;
   }
 }
 @media (max-width: 768px) {
@@ -781,7 +799,7 @@ footer {
   }
 
   header nav a {
-    font-size: 12px;
+    font-size: 14px;
     white-space: nowrap;
   }
 
@@ -894,6 +912,7 @@ footer {
 @media (max-width: 375px) {
   /* Encabezado */
   header {
+    width: calc(100% - 16px);
     padding: 8px;
   }
 
@@ -906,7 +925,7 @@ footer {
   }
 
   header nav a {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   /* Secciones */
