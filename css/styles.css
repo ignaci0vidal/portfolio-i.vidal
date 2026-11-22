@@ -6,7 +6,7 @@
 
 body {
   margin: 0;
-  font-family: 'Geist', Arial, sans-serif;
+  font-family: "Geist", Arial, sans-serif;
   background-color: #121212;
   color: #ffffff;
 }
@@ -15,7 +15,7 @@ body {
 h1,
 h2,
 h3 {
-  font-family: 'Manrope', Arial, sans-serif;
+  font-family: "Manrope", Arial, sans-serif;
   font-weight: 700;
 }
 
@@ -25,25 +25,44 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px 40px;
+  width: min(80%, 1120px);
+  margin: 12px auto;
+  gap: 16px;
+  padding: 10px 18px;
 
   position: sticky;
-  top: 0;
+  top: 12px;
   z-index: 10;
 
-  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 10px;
   background-color: rgba(18, 18, 18, 0.92);
   backdrop-filter: blur(12px);
+}
 
-  header nav a {
-    color: #cccccc;
-    font-weight: 500;
-    transition: color 0.2s ease;
-  }
+header nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  color: #cccccc;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
 
-  header nav a:hover {
-    color: #ffffff;
-  }
+header nav a:hover,
+header nav a:focus-visible {
+  color: #ffffff;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+:focus-visible {
+  outline: 2px solid #cccccc;
+  outline-offset: 4px;
+}
+
+html {
+  scroll-padding-top: 110px;
 }
 
 /* Logo del encabezado */
@@ -67,14 +86,17 @@ header {
 }
 
 header nav {
-  width: 50%;
+  flex: 1;
+  min-width: 0;
 }
 
 header ul {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
-  padding-left: 0;
+  padding: 0;
+  margin: 0;
+  gap: 12px;
 }
 
 header a {
@@ -85,7 +107,7 @@ header a {
 /* Botón de contacto por correo */
 
 .mail {
-  margin: 20px 0;
+  margin: 0;
 }
 
 .btn-mail {
@@ -93,7 +115,8 @@ header a {
   align-items: center;
   gap: 8px;
 
-  padding: 9px 15px;
+  min-height: 44px;
+  padding: 9px 12px;
   font-size: 13px;
   font-weight: 500;
 
@@ -116,7 +139,7 @@ header a {
 #inicio {
   position: relative;
   padding: 110px 40px;
-  background-image: url('../assets/img/banner.jpg');
+  background-image: url("../assets/img/banner.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -125,7 +148,7 @@ header a {
 /* Capa oscura sobre el banner */
 
 #inicio::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -156,7 +179,7 @@ header a {
 }
 
 #inicio h1 {
-  font-family: 'Manrope', Arial, sans-serif;
+  font-family: "Manrope", Arial, sans-serif;
   font-size: 4rem;
   font-weight: 800;
   margin: 15px 0;
@@ -301,7 +324,7 @@ table {
   width: 100%;
   margin: 40px 0;
   border-collapse: collapse;
-  font-family: 'Geist', Arial, sans-serif;
+  font-family: "Geist", Arial, sans-serif;
 }
 
 /* Celdas */
@@ -447,7 +470,7 @@ form input,
 form textarea {
   width: 100%;
   padding: 14px;
-  font-family: 'Geist', Arial, sans-serif;
+  font-family: "Geist", Arial, sans-serif;
   font-size: 15px;
   background-color: #1e1e1e;
   color: #ffffff;
@@ -468,7 +491,7 @@ form button {
   background-color: #ffffff;
   color: #121212;
   padding: 14px 28px;
-  font-family: 'Geist', Arial, sans-serif;
+  font-family: "Geist", Arial, sans-serif;
   font-size: 15px;
   font-weight: 600;
   border: none;
@@ -611,8 +634,9 @@ form button i {
   color: #ffffff;
   border: 1px solid #444444;
   border-radius: 6px;
+  min-height: 44px;
   padding: 8px 10px;
-  font-family: 'Geist', Arial, sans-serif;
+  font-family: "Geist", Arial, sans-serif;
   cursor: pointer;
 }
 
@@ -622,9 +646,10 @@ form button i {
 #sobre-mi,
 #habilidades,
 #proyectos,
-#contacto {
-  padding-left: max(40px, calc(50% - 560px));
-  padding-right: max(40px, calc(50% - 560px));
+#contacto,
+footer {
+  padding-left: max(10%, calc(50% - 560px));
+  padding-right: max(10%, calc(50% - 560px));
 }
 
 /* Jerarquía tipográfica */
@@ -664,13 +689,29 @@ header nav a {
 /* TABLET HORIZONTAL - 1080px */
 
 @media (max-width: 1080px) {
+  html {
+    scroll-padding-top: 140px;
+  }
   /* Encabezado */
   header {
-    padding: 20px 30px;
+    padding: 8px 14px;
+    gap: 4px 12px;
+    flex-wrap: wrap;
   }
 
   header nav {
-    width: 60%;
+    order: 3;
+    flex-basis: 100%;
+  }
+
+  .logo-container {
+    flex: 1;
+    font-size: 17px;
+    gap: 8px;
+  }
+
+  header nav a {
+    font-size: 14px;
   }
 
   header ul {
@@ -706,16 +747,32 @@ header nav a {
   }
 }
 @media (max-width: 768px) {
+  html {
+    scroll-padding-top: 16px;
+  }
+
+  #inicio,
+  #sobre-mi,
+  #habilidades,
+  #proyectos,
+  #contacto,
+  footer {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
   header {
     position: static;
+    width: calc(100% - 32px);
+    margin: 8px auto;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 
     height: auto;
-    padding: 15px 20px;
-    gap: 10px;
+    padding: 8px 12px;
+    gap: 4px 10px;
   }
 
   /* Logo */
@@ -742,7 +799,7 @@ header nav a {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 12px 16px;
+    gap: 0 16px;
 
     padding: 0;
     margin: 0;
@@ -759,13 +816,31 @@ header nav a {
 @media (max-width: 480px) {
   /* Encabezado */
   header {
-    padding: 20px;
+    padding: 8px 10px;
   }
 
-  header ul {
+  .logo-container {
+    font-size: 16px;
+  }
+
+  .logo-container img {
+    width: 32px;
+    height: 32px;
+  }
+
+  header nav a {
+    font-size: 12px;
+    white-space: nowrap;
+  }
+
+  .selector-idioma i {
+    display: none;
+  }
+
+  header nav ul {
     flex-wrap: wrap;
     justify-content: center;
-    gap: 15px;
+    gap: 0 6px;
   }
   /* Portada móvil */
 
@@ -867,19 +942,19 @@ header nav a {
 @media (max-width: 375px) {
   /* Encabezado */
   header {
-    padding: 15px;
+    padding: 8px;
   }
 
   .logo-container {
-    font-size: 18px;
+    font-size: 15px;
   }
 
-  header ul {
-    gap: 10px;
+  header nav ul {
+    gap: 0 6px;
   }
 
-  header a {
-    font-size: 13px;
+  header nav a {
+    font-size: 12px;
   }
 
   /* Secciones */
@@ -955,11 +1030,11 @@ form button:disabled {
   display: none;
 }
 
-.contact-status[data-state='success'] {
+.contact-status[data-state="success"] {
   color: #86efac;
 }
 
-.contact-status[data-state='error'] {
+.contact-status[data-state="error"] {
   color: #fca5a5;
 }
 
@@ -976,12 +1051,12 @@ form button:disabled {
 .field-error:empty {
   display: none;
 }
-form [aria-invalid='true'] {
+form [aria-invalid="true"] {
   border-color: #fca5a5;
 }
 form [readonly] {
   opacity: 0.75;
 }
-.contact-status[data-state='sending'] {
+.contact-status[data-state="sending"] {
   color: #93c5fd;
 }
