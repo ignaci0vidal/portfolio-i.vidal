@@ -40,7 +40,7 @@
       </div>
 
       <!-- Menú de navegación -->
-      <nav>
+      <nav aria-label="Navegación principal">
         <ul>
           <li><a href="#inicio">Inicio</a></li>
           <li><a href="#sobre-mi">Sobre mí</a></li>
@@ -51,13 +51,13 @@
       </nav>
 
       <div class="mail">
-        <a href="mailto:ignaciovidal@gmail.com" class="btn-mail">
+        <a href="mailto:ignaciovidal@gmail.com" class="btn-mail" aria-label="Enviar un correo">
           <i class="fa-regular fa-envelope"></i>
         </a>
       </div>
       <!-- Selector de idioma -->
       <div class="selector-idioma">
-        <select id="idioma" onchange="window.location.href = this.value">
+        <select aria-label="Seleccionar idioma" id="idioma" onchange="window.location.href = this.value">
           <option value="./index.html" selected>ESP</option>
           <option value="./en.html">ENG</option>
         </select>
