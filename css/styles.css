@@ -71,7 +71,7 @@ header nav a {
   align-items: center;
   min-height: 44px;
   color: #b9b9b9;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 500;
   text-decoration: none;
   white-space: nowrap;
@@ -668,7 +668,7 @@ footer {
     gap: 10px;
   }
   header nav a {
-    font-size: 14px;
+    font-size: 16px;
   }
   /* Portada */
   .presentacion {
@@ -698,7 +698,7 @@ footer {
     width: 70%;
   }
 }
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   html {
     scroll-padding-top: 140px;
   }
@@ -799,7 +799,7 @@ footer {
   }
 
   header nav a {
-    font-size: 14px;
+    font-size: 16px;
     white-space: nowrap;
   }
 
@@ -925,7 +925,7 @@ footer {
   }
 
   header nav a {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   /* Secciones */
