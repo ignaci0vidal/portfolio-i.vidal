@@ -769,10 +769,21 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 0 16px;
+    gap: 8px 24px;
 
     padding: 0;
     margin: 0;
+  }
+
+  header nav li {
+    flex: 0 0 calc((100% - 48px) / 3);
+    text-align: center;
+  }
+
+  header nav a {
+    justify-content: center;
+    width: 100%;
+    font-size: 18px;
   }
 
   /* Selector de idioma */
@@ -799,7 +810,7 @@ footer {
   }
 
   header nav a {
-    font-size: 16px;
+    font-size: 18px;
     white-space: nowrap;
   }
 
@@ -810,7 +821,7 @@ footer {
   header nav ul {
     flex-wrap: wrap;
     justify-content: center;
-    gap: 0 6px;
+    gap: 8px 24px;
   }
   /* Portada móvil */
 
@@ -921,11 +932,11 @@ footer {
   }
 
   header nav ul {
-    gap: 0 6px;
+    gap: 8px 24px;
   }
 
   header nav a {
-    font-size: 16px;
+    font-size: 17px;
   }
 
   /* Secciones */
